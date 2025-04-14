@@ -3,137 +3,76 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" href="./font/OnlineWebFonts_COM_a4ae57221ff2d732ed77ec3d8d3d31c5/Apercu Regular/Apercu Regular.eot ">
-    <link rel="stylesheet" href="./style.css">
-    <link rel="stylesheet" href="./server.js">
+    <link
+      rel="stylesheet"
+      href="./font/OnlineWebFonts_COM_a4ae57221ff2d732ed77ec3d8d3d31c5/Apercu Regular/Apercu Regular.eot "
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./server.js" />
+    <link rel="stylesheet" href="./Galerie.html" />
+    <link rel="stylesheet" href="./apropos.html" />
+    <link rel="stylesheet" href="./contacter.html" />
     <title>Portfolio</title>
   </head>
-  <head>
+
+  <body>
+    <header>
+      <nav>
+        <div id="menu">
+          <ul>
+            <li>
+              <i class="fab fa-bitcoin"></i><a href="/#Galerie">Galerie</a>
+            </li>
+            <li>
+              <i class="fab fa-ethereum"></i><a href="/#A propos">A propos</a>
+            </li>
+            <li>
+              <i class="fab fa-contao"></i
+              ><a href="/#Me contacter">Me contacter</a>
+            </li>
+          </ul>
+          <i data-bs-toggle class="fas fa-moon"></i>
+        </div>
+        <i id="toggle-menu " class="fab fa-buromobelexperte"></i>
+      </nav>
+    </header>
     <main>
-        <div>
-        <section id="hero-header">        
-        </div>
-      </div>    
-        </section>
-        <section id="Galerie">Galerie</section>
-        <section id="A propos">A propos</section>
-        <section id="Me contacter">Me contacter</section>
-    </main>
-    <main></main>
-    <head>
-      
-      </head>
+      <section
+        id="hero-header"
+        class="masthead bg-primary text-white text-center"
+      >
        
-      <main>
-        <section id="contact-form">
-          <h1><Menu></Menu> contacter</h1>
-          <form id="form-contact" novalidate>
-      
-            <div class="form-group">
-              <label for="name">
-                Nom :
-              </label>
-              <div class="input-wrapper">
-                <input type="text" id="name" autofocus>
-                <i class="validation-icon"></i>
-              </div>
-              <span class="error" id="error-name"></span>
-            </div>
-      
-            <div class="form-group">
-              <label for="email">
-                Email :
-              </label>
-              <div class="input-wrapper">
-                <input type="email" id="email">
-                <i class="validation-icon"></i>
-              </div>
-              <span class="error" id="error-email"></span>
-            </div>
-      
-             <div class="form-group">
-               <label for="subject">
-                 Sujet :
-               </label>
-               <div class="input-wrapper">
-                 <input type="text" id="subject">
-                 <i class="validation-icon"></i>
-               </div>
-               <span class="error" id="error-subject"></span>
-             </div>
-      
-          </form>
-        </section>
-      </main>
-      
-      
-      <header class="masthead bg-primary text-white text-center">
-        <div class="container d-flex align-items-center flex-column">
-      
-            <video src="./video/6266-190550868_small.mp4"></video>
-    
-            <h1 class="masthead-heading text-uppercase mb-0">
-            <div class="divider-custom divider-light">
-                <div class="divider-custom-line"></div>
-                <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
-                <div class="divider-custom-line"></div>
-            </div>
-            <p class="masthead-subheading font-weight-light mb-0"></p>
-        </div>
-        <nav> 
-    <div class="container">
-        <a class="navbar-brand" href="#page-top"></a>
-        <button class="navbar-toggler text-uppercase font-weight-bold bg-primary text-white rounded" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">   
-        
-            </ul>
-        </div>
-    </div>
-</nav>   
- </header>
 
+        <video id="background-video" autoplay loop muted>
 
- <body>
-    <section class="page-section bg-primary text-white mb-0" id="about">
-        <div class="container">
-            <h2 class="page-section-heading text-center text-uppercase text-white">A propos de moi</h2>
-            <p> Je suis une artiste dans l'âme.
-            Deux années au beaux arts m'ont permis d'exprimer toute
-            l'étendue de ma créativité .
-              Après avoir exploré le monde du commerce, 
-              j'ai choisi de me reconvertir à mes 
-            premiers amour dans un métier d'avenir avec
-              une touche artistique.
-                    Ma reconversion à commencé par une 
-                    formation de Conceptrice web designer 
-                    en 2022.
-            Puis comme Community manager cette 
-              année en ayant finaliser cette "transformation" .</p>  
-            <div class="divider-custom divider-light">
-                <div class="divider-custom-line"></div>
-                <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
-                <div class="divider-custom-line"></div>
-            </div> 
-            <div class="row">
-                <div class="col-lg-4 ms-auto">
-                    <p class="lead"></p>
-                </div>
-                <div class="col-lg-4 me-auto">
-                    <p class="lead">
-                    </p>
-                </div>
-            </div>
+          <source src="https://assets.codepen.io/6093409/river.mp4" type="video/mp4">
+          
+          </video>                  
+          
+          <div class="content">                       
+                 
+          <button id="btnVideo" onclick="playAndPause()"></button>  
+          <h1>PORTEFOLIO</h1>     
+          </div>
+
+               
+              
             
-            <div class="text-center mt-4">
-                <a class="btn btn-xl btn-outline-light" href="#">
-                    <i class="fas fa-download me-2"></i>
-                    Téléchargez mon CV
-                </a>
-            </div>
-        </div>
-    </section>
-    <h1>Galerie</h1>
-    <script
-    
-  ></script>
+              
+             
+              
+             
+              
+              
+              
+              </div>
+          
+         
+          
+         
+          
+          </div>
+      </section>
+    </main>
   </body>
 </html>
