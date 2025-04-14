@@ -2,6 +2,11 @@
   font-family: roboto;
   src: url(font/OnlineWebFonts_COM_a4ae57221ff2d732ed77ec3d8d3d31c5);
 }
+@font-face {
+  font-family: montserrat;
+  src: url(./font/montserrat/Montserrat-Bold.ttf);
+}
+
 * {
   scroll-behavior: smooth;
 }
@@ -397,6 +402,128 @@ select:invalid {
   display: inline-block;
   height: 15px;
   width: 15px;
+  @media only screen and (max-width: 768px) {
+    main {
+      & section#hero-header {
+        & h1 {
+          width: 100%;
+          border-radius: 0;
+        }
+        & #content {
+          width: 100%;
+          border-radius: 0;
+          & #p-left {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+
+  @media only screen and (max-width: 576px) {
+    #scroll-to-top {
+      bottom: 20%;
+    }
+  }
   border-radius: 50px;
   background-color: pink;
+}
+contact-form {
+  min-height: inherit;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  max-width: 600px;
+  margin: auto;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#contact-form h1 {
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+#contact-form form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.form-group {
+  margin-bottom: 1rem;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+}
+
+
+.input-wrapper {
+  position: relative;
+}
+
+.input-wrapper input,
+.input-wrapper textarea {
+  width: 100%;
+  padding: 0.75rem;
+  padding-right: 2.5rem;
+  border: 1px solid #2c3e50;
+  border-radius: 5px;
+  font-size: 1rem;
+  transition: border 0.3s ease;
+}
+
+.input-wrapper input:focus,
+.input-wrapper textarea:focus {
+  outline: none;
+  border-color: #3498db;
+}
+
+.validation-icon {
+  position: absolute;
+  right: 0.75rem;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 1.2rem;
+  display: none;
+}
+
+input.valid ~ .validation-icon,
+textarea.valid ~ .validation-icon {
+  display: block;
+  color: black;
+}
+
+.invalid {
+  border-color: #e74c3c;
+}
+
+.error {
+  color: #e74c3c;
+  font-size: 0.875rem;
+  margin-top: 0.25rem;
+}
+
+/* Style pour les messages de réponse */
+.alert {
+  padding: 1rem;
+  border-radius: 5px;
+  margin-top: 1rem;
+  font-size: 1rem;
+  text-align: center;
+}
+
+.alert.success {
+  background-color: #000000 b;
+  color: #fff;
+}
+
+.alert.error {
+  background-color: black;
+  color: #fff;
 }
