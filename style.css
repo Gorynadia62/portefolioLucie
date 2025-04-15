@@ -203,10 +203,7 @@ section#hero-header {
   text-align: center;
   color: white;
 }
-#Apropos {
-  background-image: url(./image/font\ noir.jpg);
-  background-size: cover;
-}
+
 #Galerie {
   background-color: white;
   width: 600px;
@@ -462,7 +459,6 @@ contact-form {
   font-weight: bold;
 }
 
-
 .input-wrapper {
   position: relative;
 }
@@ -509,7 +505,6 @@ textarea.valid ~ .validation-icon {
   margin-top: 0.25rem;
 }
 
-/* Style pour les messages de réponse */
 .alert {
   padding: 1rem;
   border-radius: 5px;
